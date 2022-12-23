@@ -3,16 +3,17 @@ import Cards from '../components/Cards';
 import data from '../backend/Data';
 import { useState } from 'react';
 const Binge = () => {
+ 
   const [foodState, setFoodState] = useState("");
-  const [state,setState]=useState("");
-  const recommendSection = () => {
-    data.products.map((item, index) => {
-      console.log("sfsf");
-      return (<div className="d-flex justify-content-between py-5"><h1>We recommend</h1>
-        <Cards img={item.img} title={item.title} desc={item.desc} price={item.price} item={item} key={index} />
-      </div>)
-    })
-  }
+  function recommendSection(e) { 
+      parseInt({foodState}-1);
+      console.log(data.products[foodState])
+      const[id,img,title,desc,price]=data.products[foodState-1]
+      return (
+        <Cards img={img} title={title} desc={desc} price={price} id={id} />
+    )
+    }
+  
 
   return (
     <div className='container pt-5'>
@@ -29,9 +30,7 @@ const Binge = () => {
         <option value="7">Bread</option>
         <option value="8">Brng bad</option>
       </select>
-      <button onClick={recommendSection}>Submit</button>
-      <br />
-      {foodState}
+      <button onClick={()=>{recommendSection()}}>Submit</button>
     </div>
   )
 
