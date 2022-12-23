@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import Caraousel from "../components/Caraousel";
 function Home() {
   return (
-    <div>
+    <div className="container-fluid">
       <Caraousel />
-      <Link to="binge" className="btn btn-outline-success">Binge Eat</Link>
+      <div className="container d-flex inline justify-content-center">
+      <Link to="binge" className="btn btn-outline-success col-2 my-2 mx-2 py-3">Binge Eat</Link>
       <br />
-      <Link to="shop" className="btn btn-outline-success">Shopping page</Link>
+      <Link to="shop" className="btn btn-outline-success col-2 my-2 mx-2 py-3">Shopping page</Link>
+      </div>
     </div>
   );
 }
