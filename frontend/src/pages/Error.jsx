@@ -2,7 +2,7 @@ import React from "react";
 
 function Error() {
   return (
-    <div>
+    <div className="container justify-content-center">
       <h1>Error</h1>
     </div>
   );

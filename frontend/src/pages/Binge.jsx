@@ -4,11 +4,11 @@ import data from '../backend/Data';
 import { useState } from 'react';
 const Binge = () => {
   const [foodState, setFoodState] = useState("");
-
+  const [state,setState]=useState("");
   const recommendSection = () => {
     data.products.map((item, index) => {
       console.log("sfsf");
-      return (<div className="d-flex justify-content-between py-5"><h1>we recommend</h1>
+      return (<div className="d-flex justify-content-between py-5"><h1>We recommend</h1>
         <Cards img={item.img} title={item.title} desc={item.desc} price={item.price} item={item} key={index} />
       </div>)
     })
