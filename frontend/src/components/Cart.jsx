@@ -3,7 +3,7 @@ import { useCart } from 'react-use-cart';
 
 const Cart = () => {
 
-    const { 
+    const {
         isEmpty,
         totalUniqueItems,
         items,
@@ -13,7 +13,7 @@ const Cart = () => {
         removeItem,
         emptyCart,
     } = useCart();
-    if(isEmpty) return <h5 className='text-center py-5'>My Cart is Empty.</h5>
+    if (isEmpty) return <h5 className='text-center py-5'>My Cart is Empty.</h5>
     return (
         <div className='container-fluid py-3'>
             <div className="row justify-content-center">
@@ -27,7 +27,7 @@ const Cart = () => {
                         <table className="table table-light table-hover m-0">
                             <tbody>
                                 {items.map((item, index) => {
-                                    return(
+                                    return (
                                         <tr key={index} className='align-middle'>
                                             <td><img src={item.img} className='img-cart' alt={item.title} /></td>
                                             <td>{item.title}</td>

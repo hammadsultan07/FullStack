@@ -13,19 +13,19 @@ import Binge from './pages/Binge';
 function App() {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route exact path="/" element={ <Homepage/> } />
-        <Route path="/shop" element={ <CartProvider>
-        <Home />
-        <Cart />
-      </CartProvider> } />
-      <Route path="/binge" element={<Binge/>}/>
-      <Route path='*' element={ <Error/> } />
+        <Route exact path="/" element={<Homepage />} />
+        <Route path="/shop" element={<CartProvider>
+          <Home />
+          <Cart />
+        </CartProvider>} />
+        <Route path="/binge" element={<Binge />} />
+        <Route path='*' element={<Error />} />
 
       </Routes>
-      
-      
+
+
     </div>
   )
 }

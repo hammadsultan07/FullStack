@@ -1,5 +1,5 @@
 import './Cards.css';
-import {useCart} from 'react-use-cart';
+import { useCart } from 'react-use-cart';
 
 const Cards = (props) => {
     const { addItem } = useCart();

@@ -10,10 +10,10 @@ const Home = () => {
                 <div className="row">
                     {data.products.map((item, index) => {
                         return (
-                            <Cards img={item.img} title={item.title} desc={item.desc} price={item.price} item={item} key={index}/>
+                            <Cards img={item.img} title={item.title} desc={item.desc} price={item.price} item={item} key={index} />
                         )
                     })}
-                    
+
                 </div>
             </div>
         </div>

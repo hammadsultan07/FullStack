@@ -66,7 +66,7 @@ const data = {
             desc: 'Product for You',
             price: 499,
         },
-        
+
     ]
 }
 
