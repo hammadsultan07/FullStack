@@ -27,12 +27,12 @@ const Binge = () => {
         <option selected>Select a Series</option>
         <option value="1">Breaking bad</option>
         <option value="2">Stranger things</option>
-        <option value="3">ALice</option>
-        <option value="4">Kissing booth</option>
-        <option value="5">Euphoria</option>
-        <option value="6">Brea</option>
-        <option value="7">Bread</option>
-        <option value="8">Brng bad</option>
+        <option value="3">Wednesday</option>
+        <option value="4">Moneyheist</option>
+        <option value="5">Squid Game</option>
+        <option value="6">Vikings</option>
+        <option value="7">13 reasons why</option>
+        <option value="8">The Witcher</option>
       </select>
       <button onClick={recommendSection}>Submit</button>
       <div className='container d-flex justify-content-center'>
