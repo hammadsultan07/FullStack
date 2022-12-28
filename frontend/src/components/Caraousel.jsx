@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../backend/images/background.png'
+import img from '../backend/images/background.jpg'
 const Caraousel = () => {
   return (
       <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
